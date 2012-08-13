@@ -1,0 +1,1 @@
+EE's system/index.php goes here

@@ -1,0 +1,24 @@
+{!--
+	
+	Home page template
+	
+--}
+
+{!-- Pass some info to the header snippet --}
+{preload_replace:pre_page_title=""}
+{preload_replace:pre_meta_keywords=""}
+{preload_replace:pre_meta_description=""}
+{preload_replace:pre_body_class=""}
+
+{snippet_header}
+
+	{exp:channel:entries channel="home" limit="1" require_entry="yes" disable="category_fields|member_data|pagination"}
+	{if no_results}{redirect="404"}{/if}
+
+		<h1>{title}</h1>
+	
+		{home_body}
+
+	{/exp:channel:entries}
+
+{snippet_footer}

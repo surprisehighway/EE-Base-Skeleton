@@ -1,0 +1,7 @@
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+config/config_local.php
+system/expressionengine/cache
+system/images/uploads
+system/expressionengine/third_party/strong_site
